@@ -182,7 +182,7 @@ section{
     margin-bottom: 40px;
     padding: 20px;
     border-bottom: 1px solid #ccc;
-},,
+}
 
 .contact-form{
     display: flex;
@@ -197,3 +197,7 @@ form{
     flex-direction: column;
 }
 
+form textarea{
+    resize: vertical;
+    min-height: 100px;
+}
