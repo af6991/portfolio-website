@@ -292,6 +292,7 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 800px;
     gap: 20px;
     margin-bottom: 40px;
     padding: 20px;
