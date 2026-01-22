@@ -60,6 +60,10 @@ html {
     max-width: 1400px;
 }
 
+hr{
+    margin: 10px 0;
+}
+
 .section-header {
     writing-mode: vertical-lr;
     text-align: center;
@@ -115,6 +119,11 @@ html {
     0 0 3px 1px #fff,  /* inner white */
     0 0 5px 2px var(--accent-color), /* middle magenta */
     0 0 7px 4px var(--accent-color);
+}
+
+.mobile-nav-toggle {
+    visibility: hidden;
+    position: absolute;
 }
 
 /* .Orb-Room{
@@ -332,7 +341,7 @@ nav {
     margin-bottom: 5px;
     line-height: 1.5;
     color: var(--text-dim);
-    max-width: 800px;
+    max-width: 750px;
 }
 
 
@@ -475,4 +484,51 @@ footer {
     background-color: var(--primary-color);
     color: var(--text-dim);
     border-top: 1px solid var(--secondary-color);
+}
+
+/* PHONE SCREEN */
+
+@media (max-width: 35rem) {
+    *{
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    .about{
+        padding: 20px
+    }
+
+    .about-header{
+        flex-wrap: wrap;
+    }
+
+    .header-container{
+        overflow: visible
+    }
+
+    .about-description{
+        text-align: justify;
+        justify-content: center;
+    }
+
+    .about-container, .experience-description, .education-container, .project-container, .contact-card, .education-item{
+        grid-template-columns: 1fr;
+        gap: 20px;
+        min-width: 100%;
+    }
+
+    .education-item p{
+        min-width: 100%;
+    }
+
+    .project-item {
+        min-width: 100%;
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+    }
+
 }
